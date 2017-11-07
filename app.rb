@@ -8,5 +8,10 @@ class App < Sinatra::Base
     "Is your name #{reversed_name}? or #{@username}"
   end
 
+  get "/square/:number" do
+    @number=params[:number]
+    square_number = @number.to_i*@number.to_i
+    "Your number squared is #{square_number}"
+  end
 
 end
