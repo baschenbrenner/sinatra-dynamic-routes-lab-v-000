@@ -44,7 +44,7 @@ class App < Sinatra::Base
       answer=@number1.to_i + @number2.to_i
       "The answer is #{answer}"
     end
-    
+
   end
 
 
