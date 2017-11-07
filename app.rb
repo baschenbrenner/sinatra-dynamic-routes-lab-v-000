@@ -18,8 +18,12 @@ class App < Sinatra::Base
     @number2 = params[:number]
     @phrase = params[:phrase]
     string_response = "You wanted to see: "
-    string_response + @phrase
-
+    i =0
+    while i<@number2.to_i
+    string_response = string_response + @phrase
+    i+=1
+    end
+    string_response
 
   end
 end
