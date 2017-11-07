@@ -14,4 +14,13 @@ class App < Sinatra::Base
     "Your number squared is #{square_number}"
   end
 
+  get "say/:number/:phrase" do
+    @number2 = params[:number]
+    @phrase = params[:phrase]
+    i = 0
+    while i < @number2
+      "#{@phrase}"
+      i+=1
+    end
+  end
 end
