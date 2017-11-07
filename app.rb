@@ -18,7 +18,7 @@ class App < Sinatra::Base
     @number2 = params[:number]
     @phrase = params[:phrase]
     string_response = "You wanted to see: "
-    string_response
+    string_response + @phrase
 
 
   end
