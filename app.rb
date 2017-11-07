@@ -14,7 +14,7 @@ class App < Sinatra::Base
     "Your number squared is #{square_number}"
   end
 
-  get "say/:number/:phrase" do
+  get "/say/:number/:phrase" do
     @number2 = params[:number]
     @phrase = params[:phrase]
     "#{@number2} and #{@phrase}"
