@@ -17,8 +17,8 @@ class App < Sinatra::Base
   get "/say/:number/:phrase" do
     @number2 = params[:number]
     @phrase = params[:phrase]
-    "show me the money"
-    "honey"
+    string_response = "You wanted to see: "
+    string_response
 
 
   end
